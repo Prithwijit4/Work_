@@ -1,0 +1,22 @@
+/* MOBILE AI */
+
+@media (max-width:768px){
+    
+    body{
+        cursor:auto;
+    }
+    
+    #cur,
+    #cvs{
+        display:none;
+    }
+    
+    nav{
+        padding:24px;
+    }
+    
+    #cbtn{
+        left:24px;
+        bottom:24px;
+    }
+}
