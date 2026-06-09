@@ -1,101 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>Prithwijit</title>
+        
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Prithwijit</title>
-
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-</head>
-
-<body>
-    <!-- LOADER -->
-    <div id="loader">
-        <div id="lpct">00<span style="font-size:.55em;color:#e84a2f">%</span></div>
-        <div id="lbar-w">
-            <div id="lbar"></div>
-        </div>
-        <div id="llbl">Loading portfolio</div>
-    </div>
-
-    <!-- NAV -->
-    <nav>
-        <div class="nav-logo">Prithwijit</div>
-        <div class="nav-links">
-            <a href="#about">Intro</a>
-            <a href="#project">Stuff I Made</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
-
-    <!-- HERO -->
-    <section class="hero-section" id="hero">
-        <div id="hw">
-            <div id="tf">
-                <span class="row">
-                    <span class="sand">BUILDING</span>
-                </span>
-                <span class="row">
-                    <span class="red">THINGS</span>
-                    <span class="sand"> THAT</span>
-                </span>
-                <span class="row">
-                    <span class="sand">JUST </span>
-                    <span class="red">WORK</span>
-                </span>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    </head>
+    
+    <body>
+        <!-- LOADER -->
+        <div id="loader">
+            <div id="lpct">00<span style="font-size:.55em;color:#e84a2f">%</span></div>
+            <div id="lbar-w">
+                <div id="lbar"></div>
             </div>
-            <!-- <div class="hero-sub" id="hsub">
-                Interfaces should feel human.
-            </div> -->
+            <div id="llbl">Loading portfolio</div>
         </div>
-
-    </section>
-    <!-- WORK -->
-    <section id="work">
-        <figure>
-            <h3>Selected work</h3>
-            <div class="parent">
-                <aside id="left">
-
-                </aside>
-                <aside id="right">
-                    <div class="top"></div>
-                    <div class="bottom">
-                        <div class="inner-left">
-                            <div class="inner-top"></div>
-                            <div class="inner-bottom"></div>
+        
+        <!-- NAV -->
+        <nav>
+            <div class="nav-logo">Prithwijit</div>
+            <div class="nav-links">
+                <a href="#about">Intro</a>
+                <a href="#work">Stuff I Made</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+        
+        <!-- HERO -->
+        <section class="hero-section" id="hero">
+            <div id="hw">
+                <div id="tf">
+                    <span class="row">
+                        <span class="sand">BUILDING</span>
+                    </span>
+                    <span class="row">
+                        <span class="red">THINGS</span>
+                        <span class="sand"> THAT</span>
+                    </span>
+                    <span class="row">
+                        <span class="sand">JUST </span>
+                        <span class="red">WORK</span>
+                    </span>
+                </div>
+            </div>
+            
+        </section>
+        
+        <!-- About section -->
+        <section class="about-section" id="about">
+            <div class="abt-main-text">
+                <p>The Person Behind the Screen</p>
+            </div>
+            <div class="about-lower-text">
+                <p>I’m <span>Prithwijit</span>, a developer focused on building clean and modern digital experiences. I care about detail, usability, and interfaces that feel natural to use.</p>
+            </div>
+            <div class="about-last-text">
+                <p class="wrk-txt"><span>Work</span> Somehow</p>
+                <div class="last-text">
+                    <p>Mostly building. Occasionally fixing.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- second about -->
+        <section class="second-about">
+            <h3>How I Work</h3>
+            <p>Most of the time, I’m building clean, modern experiences and fixing the <span>little things nobody else notices.</span></p>
+        </section>
+        
+        
+    
+        <!-- WORK -->
+        <!-- <section id="work">
+            <figure>
+                <h3>Selected work</h3>
+                <div class="parent">
+                    <aside id="left">
+                        
+                    </aside>
+                    <aside id="right">
+                        <div class="top"></div>
+                        <div class="bottom">
+                            <div class="inner-left">
+                                <div class="inner-top"></div>
+                                <div class="inner-bottom"></div>
+                            </div>
+                            <div class="inner-right"></div>
                         </div>
-                        <div class="inner-right"></div>
-                    </div>
-                </aside>
+                    </aside>
+                </div>
+            </figure>
+        </section> -->
+        <section id="work">
+            <div class="sel-text">
+                <h3>Selected work</h3>
             </div>
-        </figure>
-    </section>
-
-    <!-- CANVAS -->
-    <canvas id="cvs"></canvas>
-
-    <!-- CORNER BUTTON -->
-    <div id="cbtn">
-        <svg viewBox="0 0 24 24">
-            <path d="M12 3v13M5 10l7 7 7-7" />
-            <path d="M5 20h14" />
-        </svg>
-    </div>
-
-    <div class="grain"></div>
-    <div id="cur"></div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/media/images/amazon.webp" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/media/images/spotify.webp" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/media/images/swiggy.webp" alt=""></div>
+                    <div class="swiper-slide"><img src="" alt=""></div>
+                    <div class="swiper-slide"><img src="" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
 
 
-    <!-- About section -->
-     
 
-    <script src="./assets/js/script.js"></script>
 
-</body>
-
-</html>
+        <!-- footer section -->
+        <footer>
+            <h3>A Simple Thought</h3>
+            <p>Interfaces should <br>feel <span>HUMAN.</span></p>
+        </footer>
+        
+        <!-- CANVAS -->
+        <canvas id="cvs"></canvas>
+        
+        <!-- CORNER BUTTON -->
+        <!-- <div id="cbtn">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 3v13M5 10l7 7 7-7" />
+                <path d="M5 20h14" />
+            </svg>
+        </div> -->
+        
+        <div class="grain"></div>
+        <div id="cur"></div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+        
+    </body>
+    </html>
