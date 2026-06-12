@@ -24,7 +24,7 @@ html,
 body {
     width: 100%;
     height: 100vh;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     background: var(--bg);
     color: var(--primary);
     font-family: syne;
@@ -136,7 +136,7 @@ nav {
 /* HERO */
 
 #hero {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -313,49 +313,31 @@ nav {
 }
 
 /* WORK */
-/* #work {
+#work-section {
     width: 100%;
-    height: 100%;
-    padding: 5% 8%;
-    align-content: center;
-    .sel-text{
-        margin-bottom: 20px;
-        }    
-        }
-        .swiper {
-            width: 100%;
-            height: 100%;
-            }
-            
-            .swiper-slide {
-                text-align: center;
-                font-size: 18px;
-                background: #444;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    h3 {
+        padding: 0 8%;
+        margin: 2rem 0;
     }
-    
-    .swiper-slide img {
-        display: block;
-        width: 100%;
+    #container {
+        display: flex;
+        gap: 1rem;
+        height: calc(100vh - 100px);
+        padding: 1rem;
+    }
+    .works {
+        flex-shrink: 0;
+        width: 100vw;
         height: 100%;
-        object-fit: cover;
-        } */
-        
-        #work-section {
+        img {
             width: 100%;
             height: 100%;
-            background: red;
-            #container {
-                width: 100%;
-                height: 90%;
-                background: green;
-                #works{
-                    
-                }
-            }
+            object-fit: cover;
         }
+    }
+}
 
 /* footer */
 footer {
